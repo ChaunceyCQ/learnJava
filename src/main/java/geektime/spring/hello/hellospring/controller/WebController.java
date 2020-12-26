@@ -23,6 +23,7 @@ public class WebController {
         return user.getName();
     }
 
+    //获取所有user账户
     @RequestMapping(value = "getUser", method = RequestMethod.GET)
     public List<User> getUsers() {
         return userService.getAll();
