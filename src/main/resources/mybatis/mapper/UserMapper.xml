@@ -46,6 +46,7 @@
         SET
         <if test="name != null">name = #{name},</if>
         <if test="password != null">password = #{password},</if>
+        age = #{age}
         WHERE
         id = #{id}
     </update>

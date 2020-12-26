@@ -51,7 +51,7 @@ public class UserRepositoryImpl implements UserRepository {
         @Override
         public User mapRow(ResultSet rs, int rowNum) throws SQLException {
             User user = new User();
-            user.setId(rs.getLong("id"));
+            user.setId(rs.getInt("id"));
             user.setName(rs.getString("name"));
             user.setPassword(rs.getString("password"));
             user.setAge(rs.getInt("age"));

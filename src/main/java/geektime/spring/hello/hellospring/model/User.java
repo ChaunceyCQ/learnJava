@@ -5,10 +5,11 @@ import lombok.Data;
 @Data
 public class User {
 
-    private Long id;
+    private int id;
     private String name;
     private String password;
     private int age;
+    private int age2;
 
     public User() {
     }
@@ -17,6 +18,15 @@ public class User {
         this.name = name;
         this.password = password;
         this.age = age;
+        this.age2 = age2;
+    }
+
+    public User(int id, String name, String password, int age) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.age = age;
+        this.age2 = age2;
     }
 
     @Override
@@ -25,7 +35,8 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
-                ", age=" + age +
+                ", age=" + age + '\'' +
+                ", age2=" + age2 +
                 '}';
     }
 }
